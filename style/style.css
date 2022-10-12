@@ -1,0 +1,41 @@
+/* :root{
+    var(--pri)
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .nav-logo{
+    padding: 10px;
+} */
+
+.nav-main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.nav-content ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-content ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+}
+
+.nav-content ul li a:hover, .nav-content ul li a:focus{
+    color: #3498db;
+}
