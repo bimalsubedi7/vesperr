@@ -6,9 +6,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   color: #444444;
   font-family: "Open Sans", sans-serif;
 }
@@ -119,7 +120,7 @@ h6 {
   transition: 600ms;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
   color: #fff;
   background-color: #3498db;
 }
@@ -183,55 +184,121 @@ h6 {
   filter: grayscale(0);
 }
 
-
-.about-main{
+.about-main {
   margin: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-heading{
+.about-heading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-heading hr{
+.about-heading hr {
   width: 50px;
   height: 2px;
   border: none;
   background-color: #3498db;
 }
 
-.about-heading h1{
+.about-heading h1 {
   padding: 0 15px;
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.about-content{
-  width: 90%;
+.about-content {
+  width:92%;
   margin-top: 48px;
   display: flex;
   justify-content: center;
 }
 
-.about-left{
-  width: 100%;
- padding: 0 12px;
+.about-left {
+  width: 50%;
+  padding: 0 12px;
 }
 
-.about-left p{
+.about-left p, .about-right p {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.about-left li{
+.about-left li {
   list-style: none;
 }
 
-.about-left i{
+.about-left ul li+li{
+  margin-top: 10px;
+}
+
+.about-left i {
   color: #3498db;
+  font-size: 18px;
+}
+
+.about-right{
+  width: 50%;
+  padding: 0 12px;
+}
+
+
+#counter{
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-main{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-left{
+  padding: 0 12px;
+  width: 40%;
+}
+
+.counter-left img{
+  height: 100%;
+  width: 100%;
+}
+
+.counter-right{
+  padding: 0 12px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.counter-card{
+  padding: 20px 12px;
+  width: 50%;
+}
+
+.counter-card-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-card-top i{
+  font-size: 36px;
+  color: #3498db;
+}
+
+.counter-card-top span{
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.counter-card p{
+  margin-left: 50px;
+  font-size: 14px;
 }
