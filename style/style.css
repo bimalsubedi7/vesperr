@@ -491,7 +491,7 @@ h6 {
 }
 
 #feature{
-  margin: 120px 0;
+  margin: 120px 0 60px 0;
 }
 
 .feature-main{
@@ -536,4 +536,85 @@ h6 {
 
 .feature-card h3 a:hover{
   color: #3498db;
+}
+
+#testimonial{
+  padding-top: 60px;
+  background-color: #f7fbfe;
+}
+
+.testimonial-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-content{
+  width: 80%;
+  /* overflow: hidden; */
+}
+
+.testimonial-slider{
+  padding-left: 33px;
+  display: flex;
+  gap: 50px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.testimonial-slider input{
+  display: none;
+}
+
+.testimonial-card{
+  width: 36%;
+  box-sizing: content-box;
+  margin: 30px 15px;
+  padding: 30px;
+  padding-left: 60px;
+  background-color: #fff;
+  box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.testimonial-card img{
+  width: 90px;
+  border: 6px solid #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: -45px;
+}
+
+.testimonial-card h4{
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.testimonial-card h3{
+  font-size: 14px;
+  color: #999;
+}
+
+.testimonial-card p{
+  margin: 15px 0;
+  font-style: italic;
+  margin: 15 auto;
+}
+
+.testimonial-card p .fa-quote-left{
+  position: relative;
+  left: -5px;
+  color: #e1f0fa;
+  font-size: 26px;
+}
+
+.testimonial-card p .fa-quote-right{
+  position: relative;
+  right: -5px;
+  top: 10px;
+  color: #e1f0fa;
+  font-size: 26px;
 }
