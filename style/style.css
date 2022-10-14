@@ -515,17 +515,25 @@ h6 {
   align-items: center;
   justify-content: center;
   background-color: #f6f6f6;
-  gap: 10px;
+  gap: 12px;
 }
 
-.feature-card ion-icon{
+.feature-card:hover{
+  background-color: #eef7fc;
+}
+
+.feature-card ion-icon, i{
   color: var(--icon-color);
   font-size: 32px;
 }
 
 .feature-card h3 a{
   text-decoration: none;
-  color: #000;
+  color: #222222;
   font-size: 16px;
   font-weight: 700;
+}
+
+.feature-card h3 a:hover{
+  color: #3498db;
 }
