@@ -618,3 +618,30 @@ h6 {
   color: #e1f0fa;
   font-size: 26px;
 }
+
+.slide-auto{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slide-auto div{
+  border: 1 px solid #3498db;
+  padding: 5px;
+}
+
+.slide-manual{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  gap: 10px;
+}
+
+.manual-btn{
+  border: 1px solid #3498db;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
