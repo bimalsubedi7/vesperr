@@ -539,7 +539,7 @@ h6 {
 }
 
 #testimonial{
-  padding-top: 60px;
+  padding: 60px 0;
   background-color: #f7fbfe;
 }
 
@@ -555,10 +555,15 @@ h6 {
 }
 
 .testimonial-slider{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonial-slider-inner{
   padding-left: 33px;
   display: flex;
   gap: 50px;
-  box-sizing: content-box;
   overflow: hidden;
 }
 
@@ -620,22 +625,24 @@ h6 {
 }
 
 .slide-auto{
-  /* position: absolute; */
+  position: absolute;
+  bottom: -12px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
 .slide-auto div{
-  border: 1 px solid #3498db;
+  border: 1px solid #3498db;
   padding: 5px;
+  border-radius: 10px;
 }
 
 .slide-manual{
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: blue;
+  /* background-color: blue; */
   gap: 10px;
 }
 
@@ -644,4 +651,21 @@ h6 {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+
+#radio1:checked + .slide-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .slide-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked .slide-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked .slide-auto .auto-btn4{
+  background: #40D3DC;
 }
