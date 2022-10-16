@@ -723,6 +723,10 @@ i {
   background: var(--primary-blue);
 }
 
+#portfolio{
+  margin: 120px 0;
+}
+
 .team-main {
   margin: 60px 0;
   display: flex;
@@ -1129,4 +1133,19 @@ textarea {
 
 .mov-to-top i{
   font-size: 16px;
+}
+
+
+
+
+.gallery-main{
+  display: flex;
+}
+
+.gallery-content{
+  width: 83%;
+}
+
+.gallery-container{
+  display: flex;
 }
