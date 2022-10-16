@@ -2,6 +2,10 @@
   --primary-blue: #3498db;
 }
 
+
+
+/* ------Global CSS Start------ */
+
 * {
   padding: 0;
   margin: 0;
@@ -64,7 +68,12 @@ button {
 .heading p {
   margin-top: 15px;
 }
+/* ------Global CSS End------ */
 
+
+
+
+/* ------Navbar CSS Start------ */
 nav {
   position: sticky;
   top: 0;
@@ -126,7 +135,13 @@ nav {
 .nav-btn:hover {
   background-color: #2383c4;
 }
+/* ------Navbar CSS End------ */
 
+
+
+
+
+/* ------Hero Section CSS Start------ */
 #hero-page {
   height: 66vh;
   overflow: hidden;
@@ -206,7 +221,14 @@ nav {
     transform: translateY(10px);
   }
 }
+/* ------Hero Section CSS End------ */
 
+
+
+
+
+
+/* ------Clients Section CSS Start------ */
 #clients {
   background-color: #f3f9fd;
   display: flex;
@@ -241,7 +263,13 @@ nav {
 .client-img-box img:hover {
   filter: grayscale(0);
 }
+/* ------Clients Section CSS End------ */
 
+
+
+
+
+/* ------About Section CSS Start------ */
 .about-main {
   margin: 60px 48px;
   display: flex;
@@ -300,7 +328,13 @@ nav {
   width: 50%;
   padding: 0 12px;
 }
+/* ------About Section CSS End------ */
 
+
+
+
+
+/* ------Counter Section CSS Start------ */
 #counter {
   margin-bottom: 120px;
   display: flex;
@@ -356,7 +390,14 @@ nav {
   margin-left: 50px;
   font-size: 14px;
 }
+/* ------Counter Section CSS End------ */
 
+
+
+
+
+
+/* ------Service Section CSS Start------ */
 #service {
   margin: 80px 0;
 }
@@ -447,7 +488,13 @@ nav {
   line-height: 28px;
   transition: all 300ms;
 }
+/* ------Service Section CSS End------ */
 
+
+
+
+
+/* ------Service2 Section CSS Start------ */
 #service2 {
   display: flex;
   justify-content: center;
@@ -512,7 +559,15 @@ nav {
 .service2-inside-card a:hover {
   text-decoration: underline;
 }
+/* ------Service Section CSS End------ */
 
+
+
+
+
+
+
+/* ------Feature Section CSS Start------ */
 #feature {
   margin: 120px 0 60px 0;
 }
@@ -536,7 +591,6 @@ nav {
   width: 23%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   background-color: #f6f6f6;
   gap: 12px;
 }
@@ -560,7 +614,14 @@ i {
 .feature-card h3 a:hover {
   color: var(--primary-blue);
 }
+/* ------Feature Section CSS End------ */
 
+
+
+
+
+
+/* ------Testimonial Section CSS Start------ */
 #testimonial {
   padding: 60px 0;
   background-color: #f7fbfe;
@@ -574,7 +635,6 @@ i {
 
 .testimonial-content {
   width: 80%;
-  /* overflow: hidden; */
 }
 
 .testimonial-slider {
@@ -687,7 +747,6 @@ i {
   position: relative;
   display: flex;
   justify-content: center;
-  /* background-color: blue; */
   gap: 10px;
 }
 
@@ -721,7 +780,15 @@ i {
 #radio5:checked ~ .slide-auto .auto-b5 {
   background: var(--primary-blue);
 }
+/* ------Testimonial Section CSS End------ */
 
+
+
+
+
+
+
+/* ------Portfolio Section CSS Start------ */
 #portfolio {
   margin: 120px 0;
 }
@@ -772,7 +839,6 @@ i {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  /* justify-content: center; */
 }
 
 .portfolio-img{
@@ -834,7 +900,14 @@ i {
 .portfolio-img:hover .portfolio-hover{
   opacity: 100;
 }
+/* ------Portfolio Section CSS End------ */
 
+
+
+
+
+
+/* ------Team Section CSS Start------ */
 .team-main {
   margin: 60px 0;
   display: flex;
@@ -916,7 +989,16 @@ i {
   color: #aaaaaa;
   text-align: center;
 }
+/* ------Portfolio Section CSS End------ */
 
+
+
+
+
+
+
+
+/* ------Pricing Section CSS Start------ */
 #pricing {
   margin: 120px 0;
 }
@@ -1021,7 +1103,16 @@ i {
   border-color: #2383c4;
   background-color: #2383c4;
 }
+/* ------Pricing Section CSS End------ */
 
+
+
+
+
+
+
+
+/* ------FAQ Section CSS Start------ */
 .faq-main {
   display: flex;
   flex-direction: column;
@@ -1067,7 +1158,17 @@ i {
 .faq-card-right {
   width: 59%;
 }
+/* ------FAQ Section CSS End------ */
 
+
+
+
+
+
+
+
+
+/* ------Contact Section CSS Start------ */
 #contact {
   margin: 120px 0;
 }
@@ -1199,7 +1300,15 @@ textarea {
 .contact-form button:hover {
   background-color: #2383c4;
 }
+/* ------Contact Section CSS End------ */
 
+
+
+
+
+
+
+/* ------Footer CSS Start------ */
 #footer {
   height: 100px;
   display: flex;
@@ -1221,7 +1330,14 @@ textarea {
   color: #222222;
   padding-right: 15px;
 }
+/* ------Footer CSS End------ */
 
+
+
+
+
+
+/* ------Move To Top Button CSS Start------ */
 .mov-to-top {
   position: fixed;
   bottom: 15px;
@@ -1239,4 +1355,4 @@ textarea {
 .mov-to-top i {
   font-size: 16px;
 }
-
+/* ------Move To Top Button CSS End------ */
