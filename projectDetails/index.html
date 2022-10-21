@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
     <title>Vesperr - Project Details</title>
 </head>
@@ -33,23 +36,53 @@
 
 
     <section id="portfolio-details">
-        <div class="title">
-            <h1>Portfolio Details</h1>
-            <a href="../index.html">Home</a> / Portfolio Details
+        <div class="container">
+            <div class="title">
+                <h1>Portfolio Details</h1>
+                <div> <a href="../index.html">Home</a> / Portfolio Details</div>
+            </div>
         </div>
 
         <div class="portfolio-details">
             <div class="portfolio-details-left">
-                <input type="radio" name="radiobtn" id="radio1">
-                <input type="radio" name="radiobtn" id="radio1">
-                <input type="radio" name="radiobtn" id="radio1">
+                <div class="slider">
+                    <input type="radio" name="radiobtn" id="radio1">
+                    <input type="radio" name="radiobtn" id="radio1">
+                    <input type="radio" name="radiobtn" id="radio1">
 
-                <img src="image/portfolio-details-1.jpg" alt="">
-                <img src="image/portfolio-details-2.jpg" alt="">
-                <img src="image/portfolio-details-3.jpg" alt="">
+                    <img src="image/portfolio-details-1.jpg" alt="">
+                    <img src="image/portfolio-details-2.jpg" alt="">
+                    <img src="image/portfolio-details-3.jpg" alt="">
+
+                    <div class="slide-auto">
+                        <div class="auto-b1"></div>
+                        <div class="auto-b2"></div>
+                        <div class="auto-b3"></div>
+                    </div>
+                </div>
+                <div class="slide-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
             </div>
-            <div class="portfolio-details right">
-                
+            <div class="portfolio-details-right">
+                <div class="right-card">
+                    <h3>Project information</h3>
+                    <ul>
+                        <li><strong>Category:</strong>Web desigh</li>
+                        <li><strong>Client:</strong>ASU Company</li>
+                        <li><strong>Project date:</strong>01 March, 2020</li>
+                        <li><strong>Project URL:</strong><a href="www.example.com">www.example.com</a></li>
+                    </ul>
+                </div>
+                <div class="right-text">
+                    <h2>This is an example of portfolio detail</h2>
+                    <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia
+                        quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
+                        Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla
+                        at esse enim cum deserunt eius.</p>
+                </div>
             </div>
         </div>
     </section>
