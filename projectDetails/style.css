@@ -128,6 +128,15 @@ nav {
   justify-content: space-between;
 }
 
+.container .title h1{
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.container .title div{
+  font-size: 14px;
+}
+
 .portfolio-details .portfolio-details-left {
   width: 65%;
   flex-shrink: 0;
@@ -160,16 +169,16 @@ nav {
 }
 
 
-#radio1:checked ~ .slide-inner img {
+#radio1:checked ~ .slider-inner img {
   left: 0;
 }
 
-#radio2:checked ~ .slide-inner img {
-  left: -52%;
+#radio2:checked ~ .slider-inner img {
+  left: -100%;
 }
 
-#radio3:checked ~ .slide-inner img {
-  left: -104%;
+#radio3:checked ~ .slider-inner img {
+  left: -200%;
 }
 
 .slide-manual {
@@ -204,7 +213,9 @@ nav {
 }
 
 .portfolio-details-left img {
+  position: relative;
   width: 100%;
+  transition: all 500ms;
 }
 
 .portfolio-details input {
@@ -224,12 +235,22 @@ nav {
   font-weight: 700;
 }
 
+.portfolio-details-right .right-card ul{
+  font-size: 15px;
+}
+
 .portfolio-details-right .right-card ul li + li {
   margin-top: 10px;
 }
 
 .portfolio-details-right .right-text {
   padding-top: 20px;
+}
+
+.portfolio-details-right .right-text h2{
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 /* ------Footer CSS Start------ */
