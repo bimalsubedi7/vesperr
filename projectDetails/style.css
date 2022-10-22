@@ -137,7 +137,18 @@ nav {
 .portfolio-details .slider{
     display: flex;
     overflow: hidden;
+    position: relative;
 }
+
+.slider .slider-auto{
+  display: flex;
+}
+
+.slider .slider-auto div{
+  padding: 5px;
+  border: 1px solid var(--primary-blue);
+}
+
 
 .portfolio-details-left img{
     width: 100%;
