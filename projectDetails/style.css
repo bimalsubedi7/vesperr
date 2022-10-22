@@ -101,88 +101,136 @@ nav {
 }
 /* ------Navbar CSS End------ */
 
-
-#portfolio-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-}
-
-.portfolio-details{
-    padding: 40px 0 60px 0;
-    width: 82%;
-    display: flex;
-    gap: 30px;
-}
-
-#portfolio-details .container{
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    background-color: #f8f8f8;
-}
-
-#portfolio-details .title{
-    width: 82%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolio-details .portfolio-details-left{
-    width: 65%;
-    flex-shrink: 0;
-}
-
-.portfolio-details .slider{
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider .slider-auto{
+#portfolio-details {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.slider .slider-auto div{
+.portfolio-details {
+  padding: 40px 0 60px 0;
+  width: 82%;
+  display: flex;
+  gap: 30px;
+}
+
+#portfolio-details .container {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+#portfolio-details .title {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-details .portfolio-details-left {
+  width: 65%;
+  flex-shrink: 0;
+}
+
+.portfolio-details .slider {
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details .slider .slider-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider .slide-auto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.slider .slide-auto div {
   padding: 5px;
   border: 1px solid var(--primary-blue);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 
-.portfolio-details-left img{
-    width: 100%;
+#radio1:checked ~ .slide-inner img {
+  left: 0;
 }
 
-.portfolio-details input{
-    display: none;
+#radio2:checked ~ .slide-inner img {
+  left: -52%;
 }
 
-.portfolio-details-right .right-card{
-    padding: 30px;
-    box-shadow: 0px 0 30px rgb(34 34 34 / 8%);
+#radio3:checked ~ .slide-inner img {
+  left: -104%;
 }
 
-.portfolio-details-right .right-card h3{
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1pa solid #eee;
-    font-size: 22px;
-    font-weight: 700;
+.slide-manual {
+  margin-top: 13px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.portfolio-details-right .right-card ul li+li{
-    margin-top: 10px;
+.manual-btn {
+  border: 1px solid var(--primary-blue);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.portfolio-details-right .right-text{
-    padding-top: 20px;
+.slide-auto .auto-b1 {
+  transition: all 300ms;
 }
 
+#radio1:checked ~ .slide-auto .auto-b1 {
+  background: var(--primary-blue);
+}
 
+#radio2:checked ~ .slide-auto .auto-b2 {
+  background: var(--primary-blue);
+}
 
+#radio3:checked ~ .slide-auto .auto-b3 {
+  background: var(--primary-blue);
+}
 
+.portfolio-details-left img {
+  width: 100%;
+}
 
+.portfolio-details input {
+  display: none;
+}
+
+.portfolio-details-right .right-card {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgb(34 34 34 / 8%);
+}
+
+.portfolio-details-right .right-card h3 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1pa solid #eee;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.portfolio-details-right .right-card ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details-right .right-text {
+  padding-top: 20px;
+}
 
 /* ------Footer CSS Start------ */
 #footer {
